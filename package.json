@@ -1,0 +1,12 @@
+{
+  "name": "ChatNW",
+  "description": "A simple, naieve chat application used for learning.",
+  "author": "Nelson Wells <nelsonwellswku@gmail.com>",
+  "dependencies": {
+    "express": "3.0.x",
+    "jade": "0.27.x",
+    "socket.io":  "0.9.x"
+  },
+  "engine": "node 0.8.x",
+  "version": "0.1.0"
+}
