@@ -2,7 +2,7 @@
 var express = require('express')
   , io = require('socket.io')
   , routes = require('./routes/http.js') 
-  , events = require('./routes/events.js')
+  , io_events = require('./routes/io_events.js')
 
 /* Start up the HTTP and socket.io servers */
 var app = express()
@@ -17,5 +17,4 @@ app.configure(function() {
 });
 
 routes.register(app);
-events.register();
-
+io_events.register(io);
